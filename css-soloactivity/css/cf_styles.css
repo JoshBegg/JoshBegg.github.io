@@ -1,0 +1,64 @@
+
+/* Josh Begg 10/29/21	*/
+@font-face{
+	font-family:'quicksand' ;
+    src:url('../fonts/quicksand-regular-webfont.woff') format('woff'),
+        url('../fonts/quicksand-regular-webfont.woff2') format('woff2');
+        font-weight: normal;
+		
+}
+
+
+#outerwrapper {
+    width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+float: left;
+margin-right: 3%;
+
+}
+
+.floatright {
+float: right;
+margin-left: 3%;
+}
+
+main, footer { 
+clear: both;
+}
+
+body{
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #B8D1EB;
+	color:#000000;
+}
+main{
+	
+	background-color: #C5A98B;
+	padding: 10px;
+}
+ul{
+	list-style: none;
+}
+main ul{
+	list-style-image: url(../images/tomato1.png)
+}
+
+h1{
+	font-family: 'Righteous';
+	
+}
+h2{
+	font-family: quicksand;
+	font-weight: normal;
+	font-style: italic;
+}
+footer{
+	font-size: 0.75em;
+	text-align: center;
+	background-color: rgb(158, 124, 78);
+	padding-bottom: 10px;
+}
