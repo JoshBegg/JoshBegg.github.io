@@ -1,0 +1,49 @@
+
+/*Your Name and today's date */
+
+
+
+	 
+#outerwrapper {	
+    border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+	width: 70%;
+	
+}
+body {
+	background-image: url(../image/jewelry.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
+	
+}
+footer {
+	font-size: 1em;
+	padding: 10px;
+}
+main {
+	background: linear-gradient(#FFFFFF,#F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: 'Courier New', Courier, monospace;
+}
+img{
+	float: left;
+	border-radius: 50%;
+}
+.addrightmargin{
+	margin-right: 10%;
+}
+nav{
+	font-size: 1.5em;
+	float: none;
+}
+.nolist{
+	list-style: none;
+}
+.google{
+	font-family: 'Pacifico', sans-serif;
+}
