@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--- HTML Template -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="author" content="Instructor">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Description" content="Practice Creating a SVG image in a web page">
+		<title>SVG Tutorial</title>
+
+</head>
+<body>
+  <!-- SVG Tutorial Option 1 using img tag -->
+  <img src="image/cat.svg">;
+  
+  <!-- SVG Tutorial Option 2 embedding XML code -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180">
+	  <rect width="200" height="180" fill="red" rx="20" ry="20"/>
+	  <text x="40" y="114" fill="blue" font-family="'Verdana-Bold'" font-size="30">
+		Meow
+	  </text>
+  </svg>
+  
+  <!-- Coming Attractions, Chapter 10 object tag -->
+  <!-- Demonstration only - student is not required to do this -->
+	<object type="image/svg+xml" data="hello.svg">
+	  <img src="image/hello.png" alt="welcome greeting">
+	</object>
+
+</body>
+</html>
