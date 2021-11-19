@@ -1,0 +1,104 @@
+/*Josh Begg 
+11/19/21*/
+body { 
+	background-color: #F5F5F5;
+    color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header { 
+	background-color: #9BC1C2; 
+    
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+h1 { 
+	text-indent: 1em;
+    line-height: 400%; 
+}
+
+nav { 
+     font-weight: bold; 
+	 
+}
+
+footer { 
+	background-color: #9BC1C2; 
+    font-size: small;
+	text-align: center;
+	font-style: italic;
+	padding: .5em;
+}
+ul{
+	list-style-image: url("../images/yogabullet.png");
+	margin-left: 3em;
+}
+.schedule{
+	border: 1px solid black ;
+	width: 100%;
+	margin-bottom: .5em;
+	border-collapse: collapse;
+}
+table{
+	border: 1px solid black;
+	text-align: center;
+}
+table,th,td{
+	border: 1px solid black;
+}
+address{
+	margin-bottom: .5em;
+}
+nav ul{
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*************************** Mobile ***************************/
+
+	
+nav ul li{
+	display: block;
+}
+h2{
+	display: none;
+}
+img{
+display: none;
+}
+header{
+	background-image: none;
+}
+body{
+	background-image: url("../images/yogamobile.png");
+}
+
+
+/*************************** Tablet ***************************/	
+@media screen and (min-width: 641px){
+
+
+nav ul li{
+display: inline;
+}
+h2{
+	display: block;
+}
+img{
+	display: block;
+}
+body{
+	background-color: #F5F5F5;
+	background-image: none;
+}
+header{
+	background-image: url("../images/lilyheader.jpg");
+}
+
+}
+
