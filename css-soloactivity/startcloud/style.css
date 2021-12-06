@@ -1,0 +1,27 @@
+body{
+  background: lightblue;
+  text-align: center;
+}
+.wrapper{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+img{
+  transform: rotateZ(-90deg) translateY(200px) scale(2);
+}
+.circle{
+  width: 108px;
+  padding: 50px 0;
+  line-height: 0;
+  margin: 68px auto;
+  background: pink;
+  color: white;
+  border-radius: 58px;
+  cursor: pointer;
+  transition: background 1s, transform 0.3s 1s ease-in;
+}
+.circle:hover{
+  background: salmon;
+  transform: rotate(360deg);
+}
