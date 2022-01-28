@@ -1,0 +1,80 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:    Josh Begg                                   #
+#Date Created:           1/28/2022                              #
+#Version:                  1.01                                #
+#Date Last Modified:       1/28/2022                         #
+#Modified by:                Josh Begg                           #
+#Modification log:       added buttons for slid show as well as drop downs                              #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Bowling Ally">
+    <meta name="keywords" content="Bowling">
+    <meta name="author" content="Josh Begg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Bowling Rink</title>
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Dave's Bowling Rink</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parties&events.html">Parties & Events</a></li>
+            <li><a href="leagues.html">Leagues</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+
+ <main> 
+
+
+<button class="accordion">Who are we</button>
+<div class="panel">
+  <p>We are big fans of bowling and games in general.</p>
+</div>
+
+<button class="accordion">What do we offer</button>
+<div class="panel">
+  <p>We offer bowling tournaments, host parties, arcade, and pool tables. </p>
+</div>
+
+<button class="accordion">Contact Us</button>
+<div class="panel">
+  <p>For any other questions or conserns contact us at 208-123-4567 or email us at davesbowlingaly@gmail.com</p>
+</div>
+
+<h2>Meet the staff</h2>
+<ul id="image_list">
+    <li><a href="images/Dave.jpg" title="Dave"></a></li>
+    <li><a href="images/Carol.jpg" title="Carol"></a></li>
+    <li><a href="images/Steve.jpg" title="Steve"></a></li>
+    <li><a href="images/Jim.jpg" title="Jim"></a></li>
+</ul>
+
+<p>
+    <input type="button" id="start" value="Start">
+    <input type="button" id="pause" value="Pause" disabled="true">
+</p>        
+
+<p><img id="main_image" src="images/Dave.jpg" alt="Dave"></p>
+<h2 id="caption">Dave</h2>    
+
+<script src="javaScript/slide_show.js"></script>
+</main>  
+<footer>
+
+</footer>
+<script src="javaScript/aboutus.js"></script>
+
+</body>
+</html>

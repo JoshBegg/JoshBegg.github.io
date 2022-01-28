@@ -1,0 +1,83 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:    Josh Begg                                   #
+#Date Created:           1/28/2022                              #
+#Version:                  1.01                                #
+#Date Last Modified:       1/28/2022                         #
+#Modified by:                Josh Begg                           #
+#Modification log:                                    #
+ --changed background for text to see better
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bowling Ally">
+    <meta name="keywords" content="Bowling">
+    <meta name="author" content="Josh Begg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Bowling Rink</title>
+    <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Dave's Bowling Rink</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parties&events.html">Parties & Events</a></li>
+            <li><a href="leagues.html">Leagues</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+<h2>Hours</h2>
+<p>M-F:10AM-10PM</p>
+<p>Sat & Sun:10AM-12PM</p>
+
+<h2>Make A Reservation</h2>
+<form id="reservation_form" name="reservation_form" 
+              action="reservation.html" method="get">
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+                <span id="first_name_error">*</span>
+            </div>
+            
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+                <span id="last_name_error">*</span>
+            </div>
+            
+            <div>
+                <label for="date">Date:</label>
+                <input type="text" id="date" name="date">
+                <span id="date_error">*</span>
+            </div>
+            
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" id="reserve_space" value="Reserve Space">
+                <input type="button" id="clear_form" value="Clear Form">
+            </div>     
+ 
+        </form>
+
+
+
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+
+<script src="javaScript/index.js"></script>
+</body>
