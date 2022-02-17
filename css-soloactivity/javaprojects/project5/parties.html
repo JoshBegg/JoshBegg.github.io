@@ -1,0 +1,286 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:    Josh Begg                                   #
+#Date Created:           1/28/2022                              #
+#Version:                  1.01                                #
+#Date Last Modified:       2/16/2022                          #
+#Modified by:                Josh Begg                           #
+#Modification log:                                    #
+ --added slideshow with animation
+  added link to header to get to home page
+------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!--fix style parties.css to work properly. slide show does not work with out manualy being coded into html page for some reason --> 
+   <style src="style/parties.css">
+        
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0; background-image: url(style/images/mainbowling.jpg);}
+.mySlides {display: none}
+img {vertical-align: middle; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 18px;
+ background-image: url("style/images/mainbowling.jpg");
+ margin: auto;
+    width: 60%;
+}
+div { 
+ margin: 0 auto;
+ width: 922px;
+}
+header {
+    margin: auto;
+    width: 85%;
+ color: #333;
+ padding: 10px;
+ border: 1px solid #ccc;
+ height: 100px;
+ 
+ background: #DAC8BF;
+}
+nav {
+    margin: auto;
+    width: 85%;
+ color: #333;
+ padding: 10px;
+ border: 1px solid #ccc;
+ 
+ background-color:#F3F2ED;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul li a{
+    image-resolution: 250px;
+  }
+ 
+  li a:hover {
+    background-color: #333;
+  }
+main { 
+    margin: auto;
+    width: 85%;
+ color: #333;
+ border: 1px solid #ccc;
+ background:#CCC8B3;
+ 
+ padding: 10px;
+ height: 100%;
+ 
+}
+footer { 
+    margin: auto;
+    width: 85%;
+ color: #333;
+ border: 1px solid #ccc;
+ background-color:#F3F2ED;
+ 
+ padding: 10px;
+}
+ span{
+   color: rgb(255, 35, 35);
+ }
+ img{
+  max-width:  100%;
+  height: auto;
+  
+  max-width: 50vw;
+}
+header a{
+  color: #333;
+  text-decoration: none;
+}
+header a:hover{
+  color:rgb(100, 7, 187);
+  text-decoration: underline;
+}
+    </style>
+  
+</head>
+
+<body>
+
+  <header>
+    <h1><a href="index.html">Dave's Bowling Rink</a></h1>
+</header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parties.html">Parties & Events</a></li>
+            <li><a href="leagues.html">Leagues</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+<main>
+    <h3>We offer many different rooms for private parties as well as multiple arcade areas feel free to look around</h3>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/room1.jpg">
+            <div class="text">Party Room 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/room2.jpg">
+            <div class="text">Party Room 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/room3.jpg" >
+            <div class="text">Party Room 3</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/arcadefront.jpg" >
+            <div class="text">Arcade in the Front</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/arcadeback.jpg" >
+            <div class="text">Arcade in the back</div>
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+
+    </div>
+</main>
+    <script src="javaScript/parties.js">
+
+    </script>
+
+</body>
+
+</html>

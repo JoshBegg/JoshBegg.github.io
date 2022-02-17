@@ -1,0 +1,101 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:    Josh Begg                                   #
+#Date Created:           1/28/2022                              #
+#Version:                  1.01                                #
+#Date Last Modified:       2/16/2022                     #
+#Modified by:                Josh Begg                           #
+#Modification log:                                    #
+ --added sign up sheet for tournoments 
+ fixed text to adjust to screen size
+  added link to header to get to home page
+------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Dave's Bowling Rink</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parties.html">Parties & Events</a></li>
+            <li><a href="leagues.html">Leagues</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>League Signup</h1>
+        <form id="content"action="leagues.html" method="get">
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name">
+                <span>*</span>
+            </div>
+
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="email_address">E-Mail:</label>
+                <input type="text" name="email_address" id="email_address">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="phone">Mobile Phone:</label>
+                <input type="text" name="phone" id="phone">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="league">League:</label>
+                <select name="league" id="league">
+                    <option value="">Select a league</option>
+                    <option>Mixed</option>
+                    <option>Men</option>
+                    <option>Women</option>
+                    <option>Seniors</option>
+                    <option>Youth</option>
+                </select>
+                <span>*</span>
+            </div>
+            <div>
+                <label>Set a reminder via:</label>
+                <input type="radio" name="contact" id="text" value="text" checked>Text
+                <input type="radio" name="contact" id="email" value="email">Email
+                <input type="radio" name="contact" id="mobile" value="mobile">Mobile phone
+                <input type="radio" name="contact" id="none" value="none">Don't contact me
+                <span>*</span>
+            </div>
+            <div>
+                <label>Terms of Service:</label>
+                <input type="checkbox" name="terms" id="terms" value="yes">I accept
+                <span>*</span>
+            </div>
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments" row="5" cols="40"></textarea>
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="button" id="register" value="Register">
+                <input type="button" id="reset_form" value="Reset">
+            </div>
+
+        </form>
+    </main>
+    <script src="javaScript/leagues.js"></script>
+</body>
+
+</html>

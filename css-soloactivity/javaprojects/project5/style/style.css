@@ -1,0 +1,177 @@
+
+/*********************************************************************
+***
+*Original Author:   Josh Begg                                 *
+*Date Created:        1/28/2022                               *
+*Version:                0.1                                *
+*Date Last Modified:      1/28/2022                        *
+*Modified by:              Josh Begg                            *
+*Modification log:         0.0 css was made                         *
+***                     0.1 added page background to make text easyer to read to contrast from background image
+******************************************************************** */
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 18px;
+ background-image: url("images/mainbowling.jpg");
+ margin: auto;
+    width: 60%;
+}
+div { 
+ margin: 0 auto;
+ width: 100%;
+}
+header {
+    margin: auto;
+    width: 60%;
+ color: #333;
+ padding: 10px;
+ border: 1px solid #ccc;
+ height: 100px;
+ 
+ background: #DAC8BF;
+}
+header a{
+  color: #333;
+  text-decoration: none;
+}
+header a:hover{
+  color:rgb(100, 7, 187);
+  text-decoration: underline;
+}
+nav {
+    margin: auto;
+    width: 60%;
+ color: #333;
+ padding: 10px;
+ border: 1px solid #ccc;
+ 
+ background-color:#F3F2ED;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  ul li a{
+    image-resolution: 250px;
+  }
+ 
+  li a:hover {
+    background-color: #333;
+  }
+main { 
+    margin: auto;
+    width: 60%;
+ color: #333;
+ border: 1px solid #ccc;
+ background:#CCC8B3;
+ 
+ padding: 10px;
+ height: 100%;
+ 
+}
+footer { 
+    margin: auto;
+    width: 60%;
+ color: #333;
+ border: 1px solid #ccc;
+ background-color:#F3F2ED;
+ 
+ padding: 10px;
+}
+ span{
+   color: rgb(255, 35, 35);
+ }
+
+ .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 90%;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* the styles for the carousel */
+.button_panel	{
+	height: 125px;
+	padding: 50px 15px;
+	float: left;
+}
+.button_panel img {
+	width: 25px;
+	height: 25px;
+}
+#display_panel {
+	height: 125px;
+	width: 100px;
+	overflow: hidden;
+	float: left;
+}
+#image_list {
+	left: 0px;
+	position: relative;   
+    width: 900px;
+    list-style: none;  
+}
+#image_list li	{
+	float: left;
+	width: 100px;
+}
+#image_list li img	{
+	width: 95px;
+	
+}
+
+img{
+  width:  100%;
+  height: auto;
+  
+  max-width: 50vw;
+}
+
+
+

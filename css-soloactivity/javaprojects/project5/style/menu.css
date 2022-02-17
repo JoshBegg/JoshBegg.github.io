@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	width: 60%;
+}
+h1 { 
+	font-size: 150%;
+	margin-bottom: .5em;
+}
+ul {
+	padding-left: 45px;
+}
+li {
+	padding-bottom: .25em;
+}
+div{
+	width: 100%;
+}
+header a{
+	color: #333;
+	text-decoration: none;
+  }
+  header a:hover{
+	color:rgb(100, 7, 187);
+	text-decoration: underline;
+  }

@@ -1,0 +1,85 @@
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:    Josh Begg                                   #
+#Date Created:           1/28/2022                              #
+#Version:                  1.01                                #
+#Date Last Modified:       2/16/2022                          #
+#Modified by:                Josh Begg                           #
+#Modification log:                                    #
+ --changed background for text to see better
+  added link to header to get to home page
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bowling Ally">
+    <meta name="keywords" content="Bowling">
+    <meta name="author" content="Josh Begg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Bowling Rink</title>
+    <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">Dave's Bowling Rink</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parties.html">Parties & Events</a></li>
+            <li><a href="leagues.html">Leagues</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Hours</h2>
+        <p>M-F: 10AM-10PM</p>
+        <p>Sat & Sun: 10AM-12PM</p>
+
+        <h2>Make A Reservation</h2>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName">
+            <span></span>
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName">
+            <span></span>
+        </div>
+        <div>
+            <label for="email">E-Mail:</label>
+            <input type="text" name="email" id="email">
+            <span></span>
+        </div>
+        <div>
+            <label for="phone">Mobile phone:</label>
+            <input type="text" name="phone" id="phone">
+            <span></span>
+        </div>
+
+        <div>
+            <label for="date">Date</label>
+            <input type="text" name="date" id="date">
+            <span></span>
+        </div>
+
+        <div>
+            <label></label>
+            <input type="button" id="save" value="Save">
+        </div>
+
+        <p id="time"></p>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="javaScript/index.js"></script>
+</body>
+
+</html>

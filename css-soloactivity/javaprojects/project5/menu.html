@@ -1,0 +1,98 @@
+
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:    Josh Begg                                   #
+#Date Created:           1/28/2022                              #
+#Version:                  1.01                                #
+#Date Last Modified:       2/16/2022                       #
+#Modified by:                Josh Begg                           #
+#Modification log:                                    #
+ --changed background for text to see better
+ added link to header to get to home page
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bowling Ally">
+    <meta name="keywords" content="Bowling">
+    <meta name="author" content="Josh Begg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Bowling Rink</title>
+    
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">    
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/menu.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">Dave's Bowling Rink</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="parties.html">Parties & Events</a></li>
+            <li><a href="leagues.html">Leagues</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section>
+        <h1>Food & Drink</h1>       
+        <div id="accordion">
+             <h3>Appetizers</h3>
+            <div>
+                <p>Fries </p> 
+                <p>Tots</p>
+                <p>Onion Rings</p>
+                <p>Chips n' Cheese</p> 
+            </div>
+            <h3>Drinks</h3>
+            <div>
+                <p>Coke</p>
+                <p>Dr.Pepper</p>
+                <p>Sprite</p>
+                <p>Coffee</p>
+                <p>Tea</p>
+            </div>
+            <h3>Dinners</h3>
+            <div>
+                <p>Chicken Strips</p>
+                <p>Finger Steaks</p>
+                <p>Fish and Chips</p>
+                <p>Cheeseburger</p>
+                <p>Hot Dog</p>
+                <p></p>
+            </div>
+            
+        </div>
+        
+    </section>
+    <P>As you can see we currnetly have a small menu and would like to expand our options let us know what you would like to be served we will try our hardest to get it in stock for you</P>
+    <br>
+    <div>
+        <label for="task" >Requests:</label><br>
+        <input type="text" name="task" id="task">      
+    </div>  
+
+    <div id="tasks">
+        <label for="task_list">Requests Made:</label><br>
+        <textarea id="task_list" rows="6" cols="30"></textarea>
+    </div>
+      
+    <div>
+        <input type="button" name="add_task" id="add_task" value="Add Request"><br>
+        <input type="button" name="clear_tasks" id="clear_tasks" value="Clear Request">      
+    </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>    
+    <script src="javaScript/menu.js"></script> 
+</body>
+</html>
