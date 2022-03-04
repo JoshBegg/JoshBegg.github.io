@@ -1,0 +1,201 @@
+<!--
+#Original Author:    Josh Begg                                   #
+#Date Created:           3/3/2022                             #
+#Version:                  1.01                                #
+#Date Last Modified:      3/3/2022                          #
+#Modified by:                Josh Begg                           #
+#Modification log:                                    #
+
+
+ added  to website  
+    css library vov, framework tent, jquery accorin, nonjs library chartjs
+ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <title>160 Pixel Left Column, Single Main Column.</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="/dist/tent.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">
+  <link href="index.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="index.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion();
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div id="doc" class="yui-t1">
+    <div id="hd">
+      <div id="header">
+        <h1 class="vov fade-in-bottom-left">Welcome</h1>
+      </div>
+    </div>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div> 
+    <div id="bd">
+      <div id="yui-main">
+        <div class="yui-b">
+          <div class="content">
+            <table class="table table--stripped">
+              <thead class="table__head">
+                <tr class="table__row table__row--heading">
+                  <th class="table__cell">Tent Name</th>
+                  <th class="table__cell">Tent Type</th>
+                  <th class="table__cell">Sleeps</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__row">
+                  <td class="table__cell">Lorem </td>
+                  <td class="table__cell">Dome</td>
+                  <td class="table__cell">6</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Duis</td>
+                  <td class="table__cell">Dome</td>
+                  <td class="table__cell">6</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Excepteur </td>
+                  <td class="table__cell">Ridge</td>
+                  <td class="table__cell">2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="yui-b">
+        <div id="secondary">
+          <div id="accordion">
+            <h3>Section 1</h3>
+            <div>
+              <p>
+                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              </p>
+            </div>
+            <h3>Section 2</h3>
+            <div>
+              <p>
+                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              </p>
+            </div>
+            <h3>Section 3</h3>
+            <div>
+              <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              </p>
+            </div>
+            <h3>Section 4</h3>
+            <div>
+              <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+      let myChart = document.getElementById('myChart').getContext('2d');
+
+      // Global Options
+      Chart.defaults.global.defaultFontFamily = 'Lato';
+      Chart.defaults.global.defaultFontSize = 18;
+      Chart.defaults.global.defaultFontColor = '#777';
+
+      let massPopChart = new Chart(myChart, {
+        type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+        data: {
+          labels: ['velit ', 'cupidatat ', 'pariatur', 'reprehenderit ', 'nostrud ', 'ullamco'],
+          datasets: [{
+            label: 'voluptate ',
+            data: [
+              617594,
+              181045,
+              153060,
+              106519,
+              105162,
+              95072
+            ],
+            //backgroundColor:'green',
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
+            ],
+            borderWidth: 1,
+            borderColor: '#777',
+            hoverBorderWidth: 3,
+            hoverBorderColor: '#000'
+          }]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Lorem ipsum dolor sit amet',
+            fontSize: 25
+          },
+          legend: {
+            display: true,
+            position: 'right',
+            labels: {
+              fontColor: '#000'
+            }
+          },
+          layout: {
+            padding: {
+              left: 50,
+              right: 0,
+              bottom: 0,
+              top: 0
+            }
+          },
+          tooltips: {
+            enabled: true
+          }
+        }
+      });
+    </script>
+
+
+
+    <div id="ft">
+      <div id="footer">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+</body>
+
+</html>
